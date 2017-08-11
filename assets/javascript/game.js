@@ -1,6 +1,6 @@
 window.onload = function () {
 
-
+prompt("Press any key to begin!")
 
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
         'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
@@ -44,11 +44,11 @@ window.onload = function () {
   // Select Catagory
   var selectCat = function () {
     if (chosenCategory === categories[0]) {
-      catagoryName.innerHTML = "The Chosen Category Is Premier League Football Teams";
+      catagoryName.innerHTML = "The Category Is NHL Teams";
     } else if (chosenCategory === categories[1]) {
-      catagoryName.innerHTML = "The Chosen Category Is Films";
+      catagoryName.innerHTML = "The Category Is Books by Malcolm Gladwell";
     } else if (chosenCategory === categories[2]) {
-      catagoryName.innerHTML = "The Chosen Category Is Cities";
+      catagoryName.innerHTML = "The Category Is Cities";
     }
   }
 
@@ -185,9 +185,9 @@ window.onload = function () {
   // Play
   play = function () {
     categories = [
-        ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
-        ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"],
-        ["manchester", "milan", "madrid", "amsterdam", "prague"]
+        ["dallas stars", "nashville predators", "chicago blackhawks", "detroit red wings", "pittsburgh penguins", "new york rangers", "los angeles kings"],
+        ["outliers", "blink", "the tipping point", "what the dog saw", "david and goliath"],
+        ["boston", "austin", "new york", "dallas", "san francisco"]
     ];
 
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
@@ -213,9 +213,9 @@ window.onload = function () {
     hint.onclick = function() {
 
       hints = [
-        ["Based in Mersyside", "Based in Mersyside", "First Welsh team to reach the Premier Leauge", "Owned by A russian Billionaire", "Once managed by Phil Brown", "2013 FA Cup runners up", "Gazza's first club"],
-        ["Science-Fiction horror film", "1971 American action film", "Historical drama", "Anamated Fish", "Giant great white shark"],
-        ["Northern city in the UK", "Home of AC and Inter", "Spanish capital", "Netherlands capital", "Czech Republic capital"]
+        ["former minnesota team", "catfish is thrown on the ice here", "the madison avenue faithful", "the legion of doom line was part of this club", "sidney crosby's team", "nyc's team not on long island", "wayne gretzky led this team to the finals in '93"],
+        ["the story of success", "what the eye does every second", "how little things make big differences", "his 5th book", "also a story in the bible"],
+        ["boroughs include southy and dorchester", "keep this city weird", "the city that never sleeps", "america's Football team is based here", "tech capital of the world"]
     ];
 
     var catagoryIndex = categories.indexOf(chosenCategory);
